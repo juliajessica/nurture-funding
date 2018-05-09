@@ -1,3 +1,13 @@
-<p>
-  campaigndetail works!
-</p>
+<div class="row">
+  <div class="card col-12 col-sm-6" style="width:400px">
+    <div class="img-resize">
+      <img class="card-img-top" src='{{(listingToDisplay | async)?.image}}' alt="Card image">
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">{{(listingToDisplay | async)?.title}}</h4>
+      <p class="card-text">{{(listingToDisplay | async)?.description}}</p>
+      <hr>
+      <p><strong>Funding:</strong> {{(listingToDisplay | async)?.funding}}</p>
+    </div>
+  </div>
+</div>

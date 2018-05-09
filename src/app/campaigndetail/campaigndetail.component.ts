@@ -23,5 +23,6 @@ export class CampaigndetailComponent implements OnInit {
      this.listingId = urlParameters['id'];
    });
   this.listingToDisplay = this.listingService.getListingById(this.listingId);
+  //changes the variable name for the specific object
   }
 }
