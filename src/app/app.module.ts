@@ -9,6 +9,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { CampaignComponent } from './campaign/campaign.component';
+import { ExploreComponent } from './explore/explore.component';
+import { CampaigndetailComponent } from './campaigndetail/campaigndetail.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { CampaignComponent } from './campaign/campaign.component';
     HomepageComponent,
     NavbarComponent,
     AboutComponent,
-    CampaignComponent
+    CampaignComponent,
+    ExploreComponent,
+    CampaigndetailComponent
   ],
   imports: [
     BrowserModule,
