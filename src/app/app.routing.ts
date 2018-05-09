@@ -21,7 +21,7 @@ const appRoutes: Routes = [
   component: ExploreComponent
   },
   {
-  path: 'campaign/:id',
+  path: 'explore/:id',
   component: CampaigndetailComponent
   },
   {
