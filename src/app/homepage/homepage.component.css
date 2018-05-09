@@ -7,3 +7,11 @@ p {
   text-align: center;
   letter-spacing: 2px;
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:400px;
+  width:auto;
+}
