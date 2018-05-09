@@ -14,4 +14,7 @@ export class ListingService {
     return this.listings;
   }
 
+  getListingById(listingId: string){
+    return this.database.object('allListings/' + listingId);
+  }
 }

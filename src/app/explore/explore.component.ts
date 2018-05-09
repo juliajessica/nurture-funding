@@ -18,8 +18,7 @@ export class ExploreComponent implements OnInit {
   this.listings = this.listingService.getListings();
   }
 
-  listingDetails(clickedListing){
+  detailListing(clickedListing){
     this.router.navigate(['explore', clickedListing.$key])
   }
-
 }
