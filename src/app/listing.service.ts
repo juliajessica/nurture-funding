@@ -10,7 +10,7 @@ export class ListingService {
     this.listings = database.list('allListings');
   }
 
-  getListing(){
+  getListings(){
     return this.listings;
   }
 
