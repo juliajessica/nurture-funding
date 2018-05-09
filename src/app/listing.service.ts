@@ -6,10 +6,12 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class ListingService {
   listings: FirebaseListObservable<any[]>;
 
-  constructor(private database: AngularFireDatabase) { }
+  constructor(private database: AngularFireDatabase) {
+    this.listings = database.list('allListings');
+  }
 
   getListing(){
-
+    return this.listings;
   }
 
 }

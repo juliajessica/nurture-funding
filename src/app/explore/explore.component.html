@@ -1,3 +1,12 @@
-<p>
-  explore works!
-</p>
+<div class="row">
+  <div class="col-12">
+    <div class="card" style="width:400px" *ngFor="let listing of listings | async">
+      <img class="card-img-top" src={{listing.image}} alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">{{listing.title}}</h4>
+        <p class="card-text">Some example text.</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+  </div>
+</div>
