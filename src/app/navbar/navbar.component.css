@@ -2,9 +2,16 @@
   background-color: #e8e8e8;
 }
 .navbar-brand{
+  padding-left: 10px;
+  font-size: 30px;
   margin-right: 50px;
 }
 
 .nav-item {
   padding: 0 25px;
+}
+
+#logo{
+  height: 90px;
+  width: auto;
 }
