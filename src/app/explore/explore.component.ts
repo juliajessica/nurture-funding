@@ -15,9 +15,11 @@ export class ExploreComponent implements OnInit {
   constructor(private router: Router, private listingService: ListingService) { }
 
   ngOnInit() {
-    this.listings = this.listingService.getListings();
+  this.listings = this.listingService.getListings();
   }
 
-  // goToListing
+  listingDetails(clickedListing){
+    this.router.navigate(['explore', clickedListing.$key])
+  }
 
 }

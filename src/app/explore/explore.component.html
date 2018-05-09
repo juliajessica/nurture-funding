@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="card col-12 col-sm-4" style="width:400px" *ngFor="let listing of listings | async">
+  <div class="card col-12 col-sm-4" style="width:400px" *ngFor="let listing of listings | async" (click)="detailListing(listing)">
     <div class="img-resize">
       <img class="card-img-top" src={{listing.image}} alt="Card image">
     </div>
