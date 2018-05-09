@@ -1,12 +1,12 @@
 <div class="row">
-  <div class="col-12 col-sm-4">
-    <div class="card" style="width:400px" *ngFor="let listing of listings | async">
+  <div class="card col-12 col-sm-4" style="width:400px" *ngFor="let listing of listings | async">
+    <div class="img-resize">
       <img class="card-img-top" src={{listing.image}} alt="Card image">
-      <div class="card-body">
-        <h4 class="card-title">{{listing.title}}</h4>
-        <p class="card-text">{{listing.description}}</p>
-        <p>{{listing.funding}}</p>
-      </div>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">{{listing.title}}</h4>
+      <p class="card-text">{{listing.description}}</p>
+      <p>{{listing.funding}}</p>
     </div>
   </div>
 </div>
