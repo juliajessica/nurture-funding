@@ -7,13 +7,17 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
+import { CampaignComponent } from './campaign/campaign.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent,
+    CampaignComponent
   ],
   imports: [
     BrowserModule,
